@@ -22,8 +22,6 @@ const CarouselItem = (props) => {
   };
 
   const handleDeleteFavorite = (itemId) => {
-    console.log("Entro");
-
     props.deleteFavorite(itemId);
   };
 
