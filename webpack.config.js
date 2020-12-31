@@ -39,13 +39,23 @@ module.exports = {
           'sass-loader'
         ]
       },
+      /* {
+        test: /\.jpg|png|gif$/,
+        use: {
+          loader: 'url-loader',
+          options: {
+            limit: 90000
+          }
+        }
+        
+      }, */
       {
         test: /\.(png|gif|jpg)$/,
         use: [
           {
             'loader': 'file-loader',
             options: {
-              name: 'assets/[hash].[ext]'
+              name: 'assets/static/[hash].[ext]'
             }
           }
         ]
